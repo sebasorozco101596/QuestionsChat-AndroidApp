@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1060042523637",
+    "project_id": "questionschat",
+    "storage_bucket": "questionschat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060042523637:android:b2140538234f46566256bc",
+        "android_client_info": {
+          "package_name": "com.sebasorozcob.www.questionschat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1060042523637-c5n5g3cs9ld5f1gedr24kofi5t97reed.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sebasorozcob.www.questionschat",
+            "certificate_hash": "f1bbbee0f1ad089b36ca2bf971104e293c9f5577"
+          }
+        },
+        {
+          "client_id": "1060042523637-54v03d2i01p4t3ne30b6viljnlon7b56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8GQ_PuubezGB_OxMl3UH10d6Pp_b2iFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060042523637-54v03d2i01p4t3ne30b6viljnlon7b56.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
