@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">QuestionsChat</string>
+    <string name="title_activity_verification">VerificationActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="frame">Frame</string>
+    <string name="livechat">LiveChat</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="one_time_password">One Time Password</string>
+    <string name="we_will_send_you_an">We will send you an</string>
+    <string name="on_this_mobile_number">On this mobile Number</string>
+    <string name="type_your_phone_number">Type your Phone Number</string>
+    <string name="continue_btn">Continue</string>
+</resources>
