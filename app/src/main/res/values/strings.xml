@@ -17,4 +17,7 @@
     <string name="on_this_mobile_number">On this mobile Number</string>
     <string name="type_your_phone_number">Type your Phone Number</string>
     <string name="continue_btn">Continue</string>
+    <string name="image_of_phone_in_hand">Image of phone in hand</string>
+    <string name="verify_1_9734620735">Verify +1 9734620735</string>
+    <string name="enter_the_otp_code_to_verify_your_phone_number">Enter the OTP code to Verify Your Phone Number</string>
 </resources>
