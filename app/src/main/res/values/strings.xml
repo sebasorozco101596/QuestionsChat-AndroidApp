@@ -24,4 +24,9 @@
     <string name="please_set_your_name_and_an_optional_profile_image">Please set your name and an optional Profile Image</string>
     <string name="type_your_name">Type your Name</string>
     <string name="setup_profile">Setup Profile</string>
+    <string name="main_background">main background</string>
+    <string name="answer_amp_question"><![CDATA[Answer & Question]]></string>
+    <string name="work_in_android_development_and_application_ui_design">Work in Android Development and Application UI Design</string>
+    <string name="profile_name">Profile Name</string>
+    <string name="ask_any_question_for_expert_and_get_the_better_solution">Ask any question for Expert and get the better Solution</string>
 </resources>

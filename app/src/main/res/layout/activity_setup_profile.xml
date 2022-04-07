@@ -70,7 +70,7 @@
                 android:drawablePadding="10dp"
                 android:ems="1"
                 android:hint="@string/type_your_name"
-                android:inputType="phone"
+                android:inputType="text"
                 android:padding="10dp"
                 android:textColor="@color/grey"
                 android:textColorHint="#757575"

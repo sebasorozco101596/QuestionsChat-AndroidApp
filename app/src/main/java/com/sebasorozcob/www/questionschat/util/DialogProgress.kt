@@ -16,6 +16,7 @@ class DialogProgress {
         context: Context,
         message: String
     ): AlertDialog {
+
         val llPadding = 30
         val ll = LinearLayout(context)
         ll.orientation = LinearLayout.HORIZONTAL
