@@ -4,6 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SetupProfileActivity">
+    tools:context=".view.activities.SetupProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/profile_information"
+        android:textSize="19sp"
+        android:textStyle="bold|normal"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="@+id/profileImageView"
+        app:layout_constraintStart_toStartOf="@+id/profileImageView"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageView" />
+
+    <TextView
+        android:id="@+id/informationSetupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/please_set_your_name_and_an_optional_profile_image"
+        android:textColor="@color/grey"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/profileInfoTextView"
+        app:layout_constraintStart_toStartOf="@+id/profileInfoTextView"
+        app:layout_constraintTop_toBottomOf="@+id/profileInfoTextView" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/informationSetupTextView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:autofillHints=""
+                android:background="@drawable/background_shape"
+                android:drawableStart="@drawable/ic_profile"
+                android:drawablePadding="10dp"
+                android:ems="1"
+                android:hint="@string/type_your_name"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColor="@color/grey"
+                android:textColorHint="#757575"
+                android:textSize="16sp"
+                android:textStyle="bold|normal"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/setupButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.9"
+                android:backgroundTint="@color/blue_sky"
+                android:text="@string/setup_profile"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold|normal" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

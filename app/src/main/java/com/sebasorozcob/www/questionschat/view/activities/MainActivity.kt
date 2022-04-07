@@ -1,16 +1,12 @@
-package com.sebasorozcob.www.questionschat
+package com.sebasorozcob.www.questionschat.view.activities
 
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.view.WindowManager
-import androidx.core.view.WindowCompat
+import com.sebasorozcob.www.questionschat.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
     }
 }

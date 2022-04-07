@@ -1,6 +1,5 @@
-package com.sebasorozcob.www.questionschat
+package com.sebasorozcob.www.questionschat.view.activities
 import android.app.AlertDialog
-import android.app.ProgressDialog
 import android.content.Context
 import android.content.Intent
 import android.graphics.Color
@@ -10,30 +9,30 @@ import android.util.Log
 import android.view.Gravity
 import android.view.ViewGroup
 import android.view.WindowManager
-import android.view.inputmethod.InputMethodManager
 import android.widget.*
-import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthOptions
 import com.google.firebase.auth.PhoneAuthProvider
 import com.sebasorozcob.www.questionschat.databinding.ActivityOtpBinding
+import com.sebasorozcob.www.questionschat.util.DialogProgress
 import java.util.concurrent.TimeUnit
 
+@Suppress("SameParameterValue")
 class OTPActivity : AppCompatActivity() {
 
     private var binding: ActivityOtpBinding? = null
     var verificationId: String? = null
     private var auth: FirebaseAuth? = null
-    var dialog: ProgressDialog? = null
+    private val dialogProgress = DialogProgress()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityOtpBinding.inflate(layoutInflater)
         setContentView(binding!!.root)
 
-        val dialog = setProgressDialog(this@OTPActivity, "Sending OTP...")
+        val dialog = dialogProgress.setProgressDialog(this@OTPActivity, "Sending OTP...")
         dialog.show()
         supportActionBar?.hide()
 
@@ -90,51 +89,5 @@ class OTPActivity : AppCompatActivity() {
                     }
                 }
         }
-    }
-
-    private fun setProgressDialog(context: Context, message:String):AlertDialog {
-        val llPadding = 30
-        val ll = LinearLayout(context)
-        ll.orientation = LinearLayout.HORIZONTAL
-        ll.setPadding(llPadding, llPadding, llPadding, llPadding)
-        ll.gravity = Gravity.CENTER
-        var llParam = LinearLayout.LayoutParams(
-            LinearLayout.LayoutParams.WRAP_CONTENT,
-            LinearLayout.LayoutParams.WRAP_CONTENT)
-        llParam.gravity = Gravity.CENTER
-        ll.layoutParams = llParam
-
-        val progressBar = ProgressBar(context)
-        progressBar.isIndeterminate = true
-        progressBar.setPadding(0, 0, llPadding, 0)
-        progressBar.layoutParams = llParam
-
-        llParam = LinearLayout.LayoutParams(
-            ViewGroup.LayoutParams.WRAP_CONTENT,
-            ViewGroup.LayoutParams.WRAP_CONTENT)
-        llParam.gravity = Gravity.CENTER
-        val tvText = TextView(context)
-        tvText.text = message
-        tvText.setTextColor(Color.parseColor("#000000"))
-        tvText.textSize = 20.toFloat()
-        tvText.layoutParams = llParam
-
-        ll.addView(progressBar)
-        ll.addView(tvText)
-
-        val builder = AlertDialog.Builder(context)
-        builder.setCancelable(true)
-        builder.setView(ll)
-
-        val dialog = builder.create()
-        val window = dialog.window
-        if (window != null) {
-            val layoutParams = WindowManager.LayoutParams()
-            layoutParams.copyFrom(dialog.window?.attributes)
-            layoutParams.width = LinearLayout.LayoutParams.WRAP_CONTENT
-            layoutParams.height = LinearLayout.LayoutParams.WRAP_CONTENT
-            dialog.window?.attributes = layoutParams
-        }
-        return dialog
     }
 }

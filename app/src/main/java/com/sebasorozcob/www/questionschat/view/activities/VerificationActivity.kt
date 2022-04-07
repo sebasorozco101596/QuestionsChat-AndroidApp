@@ -1,10 +1,8 @@
-package com.sebasorozcob.www.questionschat
+package com.sebasorozcob.www.questionschat.view.activities
 
 import android.content.Intent
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
 import androidx.core.view.WindowCompat
 import com.google.firebase.auth.FirebaseAuth
@@ -14,7 +12,7 @@ class VerificationActivity : AppCompatActivity() {
 
     private var binding : ActivityVerificationBinding? = null
 
-    var auth: FirebaseAuth? = null
+    private var auth: FirebaseAuth? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

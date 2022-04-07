@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuestionsChat">
         <activity
-            android:name=".SetupProfileActivity"
+            android:name=".view.activities.SetupProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".OTPActivity"
+            android:name=".view.activities.OTPActivity"
             android:exported="false" />
         <activity
-            android:name=".VerificationActivity"
+            android:name=".view.activities.VerificationActivity"
             android:exported="true"
             android:label="@string/title_activity_verification"
             android:theme="@style/Theme.QuestionsChat.NoActionBar">
@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".view.activities.MainActivity"
             android:exported="true" />
     </application>
 
