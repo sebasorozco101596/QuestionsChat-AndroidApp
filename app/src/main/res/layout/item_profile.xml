@@ -39,6 +39,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/actionModeBackground"
+                android:layout_marginBottom="4dp"
+                android:backgroundTint="@color/blue" />
+
             <TextView
                 android:text="@string/work_in_android_development_and_application_ui_design"
                 android:textStyle="bold|normal"

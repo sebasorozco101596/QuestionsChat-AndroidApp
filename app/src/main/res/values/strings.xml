@@ -29,4 +29,11 @@
     <string name="work_in_android_development_and_application_ui_design">Work in Android Development and Application UI Design</string>
     <string name="profile_name">Profile Name</string>
     <string name="ask_any_question_for_expert_and_get_the_better_solution">Ask any question for Expert and get the better Solution</string>
+    <string name="back">Back</string>
+    <string name="online">Online</string>
+    <string name="ask_a_question">Ask a question…</string>
+    <string name="camera">Camera</string>
+    <string name="attachment">Attachment</string>
+    <string name="send_message">Send message</string>
+    <string name="image_received">Image received</string>
 </resources>

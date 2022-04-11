@@ -5,12 +5,19 @@
       <map>
         <entry key="../../../../../../layout/custom_preview.xml" value="0.24947916666666667" />
         <entry key="app/src/main/res/drawable/background_shape.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/bottom_shape.xml" value="0.408" />
+        <entry key="app/src/main/res/drawable/ic_clip.xml" value="0.443" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/receive_drawable.xml" value="0.408" />
+        <entry key="app/src/main/res/drawable/send_drawable.xml" value="0.408" />
+        <entry key="app/src/main/res/layout/activity_chat.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_otpactivity.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_setup_profile.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_verification.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/item_profile.xml" value="0.5057291666666667" />
+        <entry key="app/src/main/res/layout/item_profile.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/receive_message.xml" value="0.449537037037037" />
+        <entry key="app/src/main/res/layout/send_message.xml" value="0.449537037037037" />
       </map>
     </option>
   </component>
